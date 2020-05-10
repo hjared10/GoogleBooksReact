@@ -1,0 +1,1 @@
+//this page would the card that the search results come from.

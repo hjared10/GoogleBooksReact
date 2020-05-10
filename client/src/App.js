@@ -26,6 +26,7 @@ class App extends Component {
 
 render() {
   return (
+    <div>
     <Router>
       <div>
         <Switch>
@@ -43,6 +44,7 @@ render() {
     <div>
       {this.state.bookone}
     </div>
+    </div>
   );
 }
 };
@@ -50,17 +52,6 @@ render() {
 
 export default App;
 
-{/* <Router>
-      <div>
-        <Switch>
-          <Route exact path={["/", "/Search"]}>
-            <Search>
-
-            </Search>
-          </Route>
-          <Route exact path="/Saved">
-            <Saved />
-          </Route>
-        </Switch>
-      </div>
-    </Router> */}
+{/* So, i cannot figure out how to make this response work.  i Spent all my time trying to figure out how to make the page display the results from google book but i honestly cannot.  I keep getting a werid error that says objects cannot be childeren of react elements.
+i do know that if i could a response that works, i would just drill those props in the searchcard element and let those
+objects be saved to the database.*/}

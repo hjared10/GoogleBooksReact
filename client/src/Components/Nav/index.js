@@ -1,0 +1,1 @@
+//these would just be nav bars that allow you to navigate around the app.
