@@ -25,26 +25,27 @@ class App extends Component {
   })}
 
 render() {
+  //having the router lines causes an error that i dont understand, so i have commented them out.
   return (
-    <div>
-    <Router>
-      <div>
-        <Switch>
-          <Route exact path={["/", "/Search"]}>
-            <Search>
+    // <div>
+    // <Router>
+    //   <div>
+    //     <Switch>
+    //       <Route exact path={["/", "/Search"]}>
+    //         <Search>
 
-            </Search>
-          </Route>
-          <Route exact path="/Saved">
-            <Saved />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    //         </Search>
+    //       </Route>
+    //       <Route exact path="/Saved">
+    //         <Saved />
+    //       </Route>
+    //     </Switch>
+    //   </div>
+    // </Router>
     <div>
       {this.state.bookone}
     </div>
-    </div>
+    
   );
 }
 };
