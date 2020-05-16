@@ -1,2 +1,1 @@
-//this would be a page that shows you the books that you saved.
-//it would make a call to mongo db and display the results in some of div or card.
+//this would be the page that makes a call to the back end for all saved books and displays them.

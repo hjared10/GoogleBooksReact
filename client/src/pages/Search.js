@@ -30,7 +30,6 @@ axios.get("https://www.googleapis.com/books/v1/volumes?q="+items)
 .then(res => {
     console.log(res.data.items)
     setResult(res.data.items)
-    console.log(result)
 })
     }
 

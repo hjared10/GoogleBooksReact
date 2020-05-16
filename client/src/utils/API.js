@@ -8,7 +8,10 @@ export default {
     //from the search page.
     makeSearch: function(book) {
         return axios.get("https://www.googleapis.com/books/v1/volumes?q="+book);
-    }
+    },
+    saveBook: function(data) {
+        return axios.post("/api/books", data);
+      },
 }
 
 // export default {
