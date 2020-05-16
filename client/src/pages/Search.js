@@ -34,6 +34,19 @@ axios.get("https://www.googleapis.com/books/v1/volumes?q="+items)
 })
     }
 
+    function saveBook(event) {
+        event.preventDefault();
+        API.saveBook({
+          title: this.volumeInfo.title,
+          author: this.volumeInfo.authors,
+          description: this.volumeInfo.description,
+          link: this.volumeInfo.infoLink,
+          image: this.volumeInfo.imageLinks.smallThumbnail,
+        })
+          .then()
+          .catch(err => console.log(err));
+      };
+
 
 
 return(
@@ -55,6 +68,7 @@ autoComplete='off'
         <p>Description: {book.volumeInfo.description}</p>
         <p>Link: {book.volumeInfo.infoLink}</p>
     <img src={book.volumeInfo.imageLinks.smallThumbnail} alt={book.title}/>
+    <button className="savebtn" onClick={saveBook}>Save</button>
     </div>
 ))}
         </div>
